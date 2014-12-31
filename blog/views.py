@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from .models import Post
+from .models import Question
 def post_list(request):
-    posts = Post.objects.filter(published_date__isnull=False).order_by('published_date')
+    posts = Question.objects.order_by('query')
     return render(request, 'blog/post_list.html', {'posts':posts})
 #Create your views here.

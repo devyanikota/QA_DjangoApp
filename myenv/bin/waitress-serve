@@ -1,4 +1,4 @@
-#!/home/devyani/mysite/myenv/bin/python
+#!/home/devyani/fs/mysite/myenv/bin/python
 # EASY-INSTALL-ENTRY-SCRIPT: 'waitress==0.8.9','console_scripts','waitress-serve'
 __requires__ = 'waitress==0.8.9'
 import sys

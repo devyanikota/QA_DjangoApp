@@ -1,23 +1,23 @@
+{% load staticfiles %}
 <html>
     <head>
         <title>Devyani's blog</title>
+        <link   rel="stylesheet"        href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link   rel="stylesheet"        href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <link   rel="stylesheet"        href="{%        static  'css/blog.css'  %}">
     </head>
     <body>
         <div>
-            <h1><a href="">Django Girls Blog</a><h1>
+            <h1><a href="">My Django App</a><h1>
         </div>
 
         <div>
-            <p>published: {{post.published_date}}</p>
-            <h2><a href="">Post.title</a></h2>
-            <p>{{post.text|linebreaks}}</p>
-        </div>
-        <div>
             {% for post in posts %}
                 <div>
-                  <p>published: {{post.published_date}}</p>
-                  <h2><a href="">{{post.title}}</a></h2>
-                  <p>{{post.text|linebreaks}}</p>
+                  <p>published: {{post.query}}</p>
+                  <h2><a href="">{{post.code}}</a></h2>
+                  <p>{{post.answer|linebreaks}}</p>
                 </div>
             {% endfor %}
         </div>

@@ -1,4 +1,4 @@
-#!/home/devyani/mysite/myenv/bin/python
+#!/home/devyani/fs/mysite/myenv/bin/python
 from django.core import management
 
 if __name__ == "__main__":
